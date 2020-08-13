@@ -1,0 +1,207 @@
+body {
+    background-color:#87bfba;
+     margin-right:auto;
+     margin-left:auto;
+     overflow-x:hidden;
+     font-family:"Bradley Hand", cursive;
+     font-size:20px;
+}
+p::selection {
+    background:#d6b788;
+    color:#fff;
+}
+@font-face {
+    font-family:"The Blacklist";
+    src:url('The Blacklist.ttf');
+}
+/*opening bar with Hello*/
+#head_open {
+    border-radius:25px;
+    border:5px solid #d48f56;
+    background-color:#d48f56;
+    margin: auto;
+    width:75%;
+    text-align:center;
+    font-family:"The Blacklist","Bradley Hand", cursive;
+    font-size:70px;
+} 
+/* All sections headings*/
+h2 {
+    text-align:center;
+    text-decoration:underline;
+    margin:15px;
+    font-size:50px;
+    font-family:"The Blacklist","Bradley Hand", cursive;
+}
+/*About me section styling*/
+#abme_ {
+    background-color: rgba(221, 232, 248, 0.2);
+    background-clip:padding-box;
+    word-wrap:break-word;
+    text-align:center;
+    width:80%;
+    margin:auto;
+    border:10px dashed #d47557;
+    padding:15px;
+}
+/*image in about me*/
+img {
+    float:right;
+    padding:20px;
+}
+/* Michelangelo quote*/
+#quote {
+    text-align:right;
+    margin:50px;
+    padding-right:50px;
+}
+/*Dwight Schrute quote*/
+#words_3 {
+    text-align:center;
+    border-radius:25px;
+    border:5px solid #d48f56;
+    background-color:#d48f56;
+    margin:0 25% 0 25%;
+    width:50%;
+    position:relative;
+    top:10%;
+    clear:both;
+}
+/*paragraph within education article*/
+#edu_2 {
+    white-space: normal;
+    text-indent: 5%;
+}
+#ds_q {
+    font-size:22px;
+}
+#work {
+    float:right;
+    width:50%;
+}
+#school {
+    float:left;
+    width:50%;
+}
+#school .degree {
+    display:flex;
+    justify-content: flex-end;
+}
+#cert_ {
+    clear:both;
+    width:50%;
+    position:relative;
+    top:-250px;
+}
+/*Beginning of Nav bar styling*/
+nav{
+    max-width:75%;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:100px;
+}
+nav ul {
+    background:linear-gradient(90deg,
+    rgba(255,255,255,0)0%,
+    rgba(255,255,255,0.2)25%,
+    rgba(255,255,255,0.2)75%,
+    rgba(255,255,255,0)100%);
+    box-shadow:0 0 25px rgba(117,183,158,0.1),
+    inset 0 0 1px rgba(117,183,158,0.6);
+}
+.navmenu {
+    display:inline-block;
+}
+.navmenu:hover {
+    cursor:pointer;
+}
+ul li ul {
+    visibility:hidden;
+    opacity:0;
+    position:absolute;
+    float:left;
+    transition:all 0.5s ease;
+    display:block;
+    max-width:fit-content;
+}
+ul .navmenu:hover > ul, ul li ul:hover {
+    visibility:visible;
+    opacity:1;
+    display:block;
+}
+ul li ul li {
+    clear:both;
+    width:100%;
+    text-align:center;
+}
+nav ul li a {
+    padding:10px;
+    color:#000;
+    font-size:18px;
+    font-family:"Bradley Hand", cursive;
+    display:block;
+    text-align:center;
+}
+nav ul li ul a {
+    text-align:center;
+    width:fit-content;
+}
+.clockbox,
+#clock {
+    width: 100%;
+}
+
+/* Clock styles */
+.circle {
+    fill: none;
+    stroke: #000;
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+
+.mid-circle {
+    fill: #000;
+}
+.hour-marks {
+    fill: none;
+    stroke: #000;
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+
+.hour-arm {
+    fill: none;
+    stroke: #000;
+    stroke-width: 17;
+    stroke-miterlimit: 10;
+}
+
+.minute-arm {
+    fill: none;
+    stroke: #000;
+    stroke-width: 11;
+    stroke-miterlimit: 10;
+}
+
+.second-arm {
+    fill: none;
+    stroke: #000;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+}
+
+/* Transparent box ensuring arms center properly. */
+.sizing-box {
+    fill: none;
+}
+
+/* Make all arms rotate around the same center point. */
+/* Optional: Use transition for animation. */
+#hour,
+#minute,
+#second {
+    transform-origin: 300px 300px;
+    transition: transform .5s ease-in-out;
+}
+
